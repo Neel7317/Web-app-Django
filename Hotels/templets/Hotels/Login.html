@@ -1,0 +1,10 @@
+<h1>From Login page</h1>
+<form method='POST' action=" " >
+    {% csrf_token %}
+   
+    <label>Email</label><input name='t1' type="text"></input></br>
+   
+    <label>password</label><input name='t2' type="password"></input></br>
+    <input type="submit" name="Login"><a href="{% url 'Home' %}">already then Login</a>
+
+</form>

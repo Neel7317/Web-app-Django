@@ -1,0 +1,9 @@
+{% if rooms %}
+    <ul>
+    {% for r in rooms %}
+        <li>{{ r.room_type}}</li><li><a href="{% url 'Booking' %}">For Booking</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
